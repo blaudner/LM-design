@@ -1,15 +1,41 @@
 body {
-  background: #eee;
+  background: url('../img/bg-tile.gif') repeat-x #eeedec;
   font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
-h1, h2, h3{
+	}
+h1, h2, h3, .top-bar-section  {
   font-family: "Play", sans-serif;
   font-weight: 400;
-}
+  font-style: normal;
+	}
 h3, h4, h5, h6 {
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
-}
+	}
+/* Foundation Top Bar */
+.top-bar-section ul li > a {
+	font-family: "Play", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	color:#999;
+  	font-size: 11pt;
+	}
+.logo-container {
+	margin: 5px 12px;
+	}
+.top-bar-section .dropdown li {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.25);
+	box-shadow:         1px 1px 3px rgba(50, 50, 50, 0.25);
+  	}
+.top-bar-section .dropdown li a {
+        font-weight: normal;
+        padding: 13px 20px; 
+    }
+.top-bar-section .dropdown li a:hover {
+        background: white;
+        color: #333;
+    }
 /* Foundation Alerts */
 .alert-box {
   background-color: #727272;
