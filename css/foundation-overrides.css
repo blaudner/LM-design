@@ -1,0 +1,159 @@
+body {
+  background: #eee;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3{
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+}
+h3, h4, h5, h6 {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+}
+/* Foundation Alerts */
+.alert-box {
+  background-color: #727272;
+  border-color: #d0d0d0;
+  color: white; }
+  .alert-box .close {
+    font-size: 1.375em;
+    padding: 5px 4px 4px;
+    line-height: 0;
+    position: absolute;
+    top: 0.4375em;
+    right: 0.3125em;
+    color: #fff;
+    opacity: 0.3; }
+    .alert-box .close:hover, .alert-box .close:focus {
+      opacity: 0.5; }
+  .alert-box.radius {
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+  .alert-box.win {
+    background-color: #568853 ;
+    border-color: #71b36d;
+    color: white; }
+  .alert-box.fail {
+    background-color: #ab1c1c ;
+    border-color: #7e3628;
+    color: white; }
+  .alert-box.warning{
+  	background-color: #b7a31c;
+    border-color: #918116;
+    color: white; }
+
+  }
+  .alert-box.alert {
+    background-color: #c60f13;
+    border-color: #970b0e;
+    color: white; }
+  .alert-box.secondary {
+    background-color: #333;
+    border-color: #d0d0d0;
+    color: white; }
+/* Foundation Buttons */  
+@media only screen {
+  button, .button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    ont-family: "Play", sans-serif;
+  	font-weight: 400;
+  	text-transform: uppercase;
+    -webkit-transition: background-color 300ms ease-out;
+    -moz-transition: background-color 300ms ease-out;
+    transition: background-color 300ms ease-out; }
+    button:active, .button:active {
+      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
+    button.radius, .button.radius {
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+    button.large, .button.large {}
+    button.small, .button.small, button.tiny, .button.tiny {
+    	text-transform: none;
+    }
+/* Global Buttons */
+
+button, .button {
+	background-color: #d0d0d0;
+  	border-color: #eee;
+  	color:#333;
+  	}
+button.disabled, button[disabled], .button.disabled, .button[disabled] {
+    background-color: inherit;
+    border-color: none;
+    color: inherit;
+    cursor: default;
+    opacity: 0.6;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	}
+/* Forge Buttons */
+button, .button.forge{
+	background-color: #355c7e;
+  	border-color: #3f6e96;
+  	color:white;}
+button.forge:hover, button.forge:focus, .button.forge:hover, .button.forge:focus {
+      background-color: #3f6e96;
+  	}
+button.small.forge, .button.small.forge, button.tiny.forge, .button.tiny.forge {
+    background-color: #d0d0d0;
+  	border-color: #eee;
+  	color:#355c7e;
+    }
+button.small.forge:hover, .button.small.forge:hover, button.tiny.forge:hover, .button.tiny.forge:hover {
+  	background-color: #355c7e;
+  	color:white;
+    }
+
+/* Microfactory Buttons */
+button, .button.factory {
+	background-color: #b7a31c;
+    border-color: #cdb71f;
+    color: white; 
+	}
+
+button.factory:hover, button.factory:focus, .button.factory:hover, .button.factory:focus {
+      background-color: #cdb71f; 
+  	}
+
+button.small.factory, .button.small.factory, button.tiny.factory, .button.tiny.factory {
+    background-color: #d0d0d0;
+  	border-color: #eee;
+  	color:#706411;
+    }
+button.small.factory:hover, .button.small.factory:hover, button.tiny.factory:hover, .button.tiny.factory:hover {
+  	background-color: #b7a31c;
+  	color:white;
+  	}
+
+/* Shop Buttons */
+button, .button.shop{
+	background-color: #ab1c1c;
+    border-color: #c3543e;
+    color: white;
+	}
+button.shop:hover, button.shop:focus, .button.shop:hover, .button.shop:focus {
+      background-color: #c3543e; 
+  	}
+  	button.small.shop, .button.small.shop, button.tiny.shop, .button.tiny.shop {
+    background-color: #d0d0d0;
+  	border-color: #eee;
+  	color:#ab1c1c;
+    }
+button.small.shop:hover, .button.small.shop:hover, button.tiny.shop:hover, .button.tiny.shop:hover {
+  	background-color: #ab1c1c;
+  	color:white;
+  	}
+  	/* Win Buttons */
+button, .button.win{
+	background-color: #568853 ;
+    border-color: #71b36d;
+    color: white;
+    -webkit-border-radius: 6px;
+    border-radius: 6px; }
+	}
+button.win:hover, button.win:focus, .button.win:hover, .button.win:focus {
+      background-color: #71b36d;; 
+  	}
+  	

@@ -16,6 +16,9 @@
     <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <title>Foundation Docs: Kitchen Sink</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <!--Designer Overrides-->
+    <link rel="stylesheet" href="css/foundation-overrides.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Play:400,700' rel='stylesheet' type='text/css'>
     <script src="http://foundation.zurb.com/docs/assets/vendor/custom.modernizr.js"></script>
     <!--Type Kit-->
     <script type="text/javascript" src="//use.typekit.net/doy0qss.js"></script>
@@ -63,8 +66,7 @@
       
       <div class="row">
         <div class="large-12 columns">
-          <h1 class="docs header"><a href="http://foundation.zurb.com/docs/">Foundation 4 Documentation</a></h1>
-          <h6 class="docs subheader"><a href="http://foundation.zurb.com/old-docs/f3">Want F3 Docs?</a></h6>
+          <h1 class="docs header"><a href="http://foundation.zurb.com/docs/">Local Motors Foundation(4) Styles</a></h1>
           <hr>
         </div>
       </div>
@@ -90,17 +92,22 @@
           <a href="" class="close">&times;</a>
         </div>
 
-        <div data-alert class="alert-box success">
-          This is a success alert (div.alert-box.success).
+        <div data-alert class="alert-box win radius">
+          This is a success alert (div.alert-box.win).
           <a href="" class="close">&times;</a>
         </div>
 
-        <div data-alert class="alert-box alert round">
-          This is an alert (div.alert-box.alert.round).
+        <div data-alert class="alert-box fail radius">
+          This is an alert (div.alert-box.alert.fail).
           <a href="" class="close">&times;</a>
         </div>
 
-        <div data-alert class="alert-box secondary">
+         <div data-alert class="alert-box warning radius">
+          This is an alert (div.alert-box.alert.warning).
+          <a href="" class="close">&times;</a>
+        </div>
+
+        <div data-alert class="alert-box secondary radius">
           This is a secondary alert (div.alert-box.secondary).
           <a href="" class="close">&times;</a>
         </div>
@@ -129,21 +136,45 @@
 
         <hr>
 
-        <h4>Buttons</h4>
+        
 
         <div class="row">
+          <h4>Global Buttons</h4>
           <div class="small-6 large-6 columns">
-            <a href="#" class="tiny button">.tiny.button</a><br>
-            <a href="#" class="small button">.small.button</a><br>
-            <a href="#" class="button">.button</a><br>
+            <a href="#" class="tiny button radius">.tiny.button</a><br>
+            <a href="#" class="small button radius">.small.button</a><br>
+            <a href="#" class="button radius">.button</a><br>
+            <a href="#" class="large button radius">.large.button</a><br>
+             <a href="#" class="button win">.win.button</a><br>
+            <a href="#" class="button radius disabled">.button.disabled</a><br>
           </div>
+          <h4>Forge Buttons</h4>
           <div class="small-6 large-6 columns">
-            <a href="#" class="tiny button secondary">.tiny.secondary</a><br>
-            <a href="#" class="small button success radius">.small.success.radius</a><br>
-            <a href="#" class="button alert round disabled">.round.disabled</a><br>
+            <a href="#" class="tiny button forge radius">.tiny.forge.button</a><br>
+            <a href="#" class="small button forge radius">.small.forge.button</a><br>
+            <a href="#" class="button forge radius">.forge.button</a><br>
+            <a href="#" class="button forge large radius">.large.forge.button</a><br>
+            <a href="#" class="button forge disabled radius">.forge.button.disabled</a><br>
           </div>
         </div>
-
+        <div class="row">
+          <h4>Microfactory Buttons</h4>
+          <div class="small-6 large-6 columns">
+            <a href="#" class="tiny button factory radius">.tiny.microfactory.button</a><br>
+            <a href="#" class="small button factory radius">.small.microfactory.button</a><br>
+            <a href="#" class="button factory radius">.microfactory.button</a><br>
+            <a href="#" class="large button factory radius">.large.microfactory.button</a><br>
+            <a href="#" class="button radius factory disabled">.button.microfacotry.disabled</a><br>
+          </div>
+          <h4>Shop Buttons</h4>
+          <div class="small-6 large-6 columns">
+            <a href="#" class="tiny button shop radius">.tiny.shop.button</a><br>
+            <a href="#" class="small button shop radius">.small.shop.button</a><br>
+            <a href="#" class="button shop radius">.shop.button</a><br>
+            <a href="#" class="large button shop radius">.large.shop.button</a><br>
+            <a href="#" class="button shop disabled radius">.shop.button.disabled</a><br>
+          </div>
+        </div>
         <hr>
 
         <h4>Button Groups</h4>
@@ -157,18 +188,8 @@
           <li><a href="#" class="button secondary">Button 1</a></li>
           <li><a href="#" class="button secondary">Button 2</a></li>
           <li><a href="#" class="button secondary">Button 3</a></li>
-          <li><a href="#" class="button secondary">Button 4</a></li>
         </ul>
-        <ul class="button-group round even-3">
-          <li><a href="#" class="button alert">Button 1</a></li>
-          <li><a href="#" class="button alert">Button 2</a></li>
-          <li><a href="#" class="button alert">Button 3</a></li>
-        </ul>
-        <ul class="button-group round even-3">
-          <li><input type="submit" class="button success" value="Button 1"></li>
-          <li><input type="submit" class="button success" value="Button 2"></li>
-          <li><input type="submit" class="button success" value="Button 3"></li>
-        </ul>
+        
 
         <hr>
 
@@ -176,9 +197,8 @@
 
         <a href="#" data-dropdown="drop" class="tiny button dropdown">Dropdown Button</a><br>
         <a href="#" data-dropdown="drop2" class="small secondary radius button dropdown">Dropdown Button</a><br>
-        <a href="#" data-dropdown="drop3" class="button alert round dropdown">Dropdown Button</a><br>
-        <a href="#" data-dropdown="drop4" class="large success button dropdown">Dropdown Button</a><br>
-        <a href="#" data-dropdown="drop5" class="large button dropdown expand">Dropdown Button</a>
+        <a href="#" data-dropdown="drop3" class="button dropdown">Dropdown Button</a><br>
+        <a href="#" data-dropdown="drop5" class="fail button dropdown expand">Dropdown Button</a>
 
         <hr>
 
@@ -186,9 +206,7 @@
 
         <a href="#" class="tiny button split">Split Button <span data-dropdown="drop"></span></a><br>
         <a href="#" class="small secondary radius button split">Split Button <span data-dropdown="drop2"></span></a><br>
-        <a href="#" class="button alert round split">Split Button <span data-dropdown="drop3"></span></a><br>
-        <a href="#" class="large success button split">Split Button <span data-dropdown="drop4"></span></a>
-
+        
         <hr>
 
         <h4>Clearing</h4>

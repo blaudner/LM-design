@@ -1061,7 +1061,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ff-cocon-web-pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #333333;
@@ -1073,9 +1073,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 60%;
     color: gray;
     line-height: 0; }
-h1, h2, h3{
-  font-family: "ff-cocon-web-pro", "Helvetica", Helvetica, Arial, sans-serif;
-}
+
 h1 {
   font-size: 2.125em; }
 
