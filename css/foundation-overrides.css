@@ -87,7 +87,8 @@ h3, h4, h5, h6 {
   	text-transform: uppercase;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
-    transition: background-color 300ms ease-out; }
+    transition: background-color 300ms ease-out; 
+	}
     button:active, .button:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
@@ -131,6 +132,31 @@ button.small.forge:hover, .button.small.forge:hover, button.tiny.forge:hover, .b
   	background-color: #355c7e;
   	color:white;
     }
+button.appButton, .button.appButton {
+	-webkit-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.25);
+	box-shadow:         0px 0px 3px rgba(50, 50, 50, 0.25);
+	border:none;
+	width: 57px;
+	height: 57px;
+	background: #b8b8b8;
+	background: -moz-linear-gradient(top,  #b8b8b8 0%, #9b9b9b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8b8b8), color-stop(100%,#9b9b9b));
+	background: -webkit-linear-gradient(top,  #b8b8b8 0%,#9b9b9b 100%);
+	background: -o-linear-gradient(top,  #b8b8b8 0%,#9b9b9b 100%);
+	background: -ms-linear-gradient(top,  #b8b8b8 0%,#9b9b9b 100%);
+	background: linear-gradient(to bottom,  #b8b8b8 0%,#9b9b9b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', endColorstr='#9b9b9b',GradientType=0 );
+}
+button.appButton:hover, .button.appButton:hover {
+	background: #728da5;
+	background: -moz-linear-gradient(top,  #728da5 0%, #365d7f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#728da5), color-stop(100%,#365d7f));
+	background: -webkit-linear-gradient(top,  #728da5 0%,#365d7f 100%);
+	background: -o-linear-gradient(top,  #728da5 0%,#365d7f 100%);
+	background: -ms-linear-gradient(top,  #728da5 0%,#365d7f 100%);
+	background: linear-gradient(to bottom,  #728da5 0%,#365d7f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#728da5', endColorstr='#365d7f',GradientType=0 );
+}
 
 /* Microfactory Buttons */
 button, .button.factory {
